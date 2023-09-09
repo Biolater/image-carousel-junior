@@ -2,8 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Color Changer</title>
+    <title>Pass the message</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
@@ -21,9 +28,18 @@
       rel="stylesheet"
     />
   </head>
-  <body class="vh-100 w-100 d-flex align-items-center justify-content-center">
-    <div class="container d-flex justify-content-center p-3">
-      <button class="btn btn-outline-secondary">Click Me</button>
+  <body>
+    <div
+      class="container justify-content-center align-items-center d-flex vh-100"
+    >
+      <div class="counter-box text-center">
+        <h4>COUNTER</h4>
+        <h1 class="counter-text"></h1>
+        <div class="buttons">
+          <button class="btn btn-outline-secondary increase">Increase</button>
+          <button class="btn btn-outline-secondary decrease">Decrease</button>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
