@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Pass the message</title>
+    <title>Image Carousel</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -29,15 +29,22 @@
     />
   </head>
   <body>
-    <div
-      class="container justify-content-center align-items-center d-flex vh-100"
-    >
-      <div class="counter-box text-center">
-        <h4>COUNTER</h4>
-        <h1 class="counter-text"></h1>
-        <div class="buttons">
-          <button class="btn btn-outline-secondary increase">Increase</button>
-          <button class="btn btn-outline-secondary decrease">Decrease</button>
+    <div class="container">
+      <div class="image-container d-flex flex-column">
+        <div class="image-box">
+          <img alt="" />
+          <a id="prev">❮</a>
+          <a id="next">❯</a>
+        </div>
+        <div class="dots justify-content-center">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>

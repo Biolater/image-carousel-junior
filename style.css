@@ -1,14 +1,70 @@
-.counter-box{
-    width: 600px;
-    background-color: #FEFFEA;
-    border: 5px groove black;
-    padding: 20px;
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.counter-text{
-    font-size: 154px;
+.image-box {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
-body{
-    background-color: rgb(252, 252, 98)!important;
+.image-box img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff !important;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    padding: 16px;
+    transition: .5s;
+}
+
+#prev {
+    position: absolute;
+    left: 0;
+    top: 43%;
+    border-radius: 0px 3px 3px 0px;
+}
+
+#next {
+    position: absolute;
+    right: 0;
+    top: 43%;
+    border-radius: 3px 0px 0px 3px;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.dots {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dots span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #bbb;
+}
+
+.active {
+    background-color: #717171 !important;
+    transition: .5s;
 }
