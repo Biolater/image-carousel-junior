@@ -1,12 +1,12 @@
 .container {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .image-box {
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -15,6 +15,12 @@
 .image-box img {
     width: 100%;
 }
+
+.image {    
+    width: 100%;
+    display: none;
+}
+
 
 body {
     margin: 0;
@@ -68,3 +74,5 @@ a:hover {
     background-color: #717171 !important;
     transition: .5s;
 }
+
+
